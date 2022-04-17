@@ -49,6 +49,7 @@ create_test_image_file()
 }
 
 
+# Unmounts the overlay filesystem and its different layers.
 umount_overlay()
 {
     if mountpoint -q ${MOUNT_POINT}/overlay; then
